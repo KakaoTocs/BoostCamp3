@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GradeView" customModule="BoostCamp3" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="XYc-LW-mQt" id="dyc-wC-Cm2"/>
+                <outletCollection property="gradeStarImageViews" destination="ff5-D9-4G7" collectionClass="NSMutableArray" id="Wtn-Na-bY9"/>
+                <outletCollection property="gradeStarImageViews" destination="rJW-BO-Apz" collectionClass="NSMutableArray" id="ytG-Sm-Ilf"/>
+                <outletCollection property="gradeStarImageViews" destination="5bY-NM-BgY" collectionClass="NSMutableArray" id="e9b-EU-4ch"/>
+                <outletCollection property="gradeStarImageViews" destination="1bJ-ZK-pZI" collectionClass="NSMutableArray" id="Oo9-H5-X08"/>
+                <outletCollection property="gradeStarImageViews" destination="55j-oq-JsN" collectionClass="NSMutableArray" id="geL-n5-3z2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XYc-LW-mQt">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rJW-BO-Apz">
+                    <rect key="frame" x="25" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rJW-BO-Apz" secondAttribute="height" multiplier="1:1" id="K6X-q3-dHR"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ff5-D9-4G7">
+                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ff5-D9-4G7" secondAttribute="height" multiplier="1:1" id="5WS-FL-fL0"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-ZK-pZI">
+                    <rect key="frame" x="75" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1bJ-ZK-pZI" secondAttribute="height" multiplier="1:1" id="487-Br-odN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5bY-NM-BgY">
+                    <rect key="frame" x="50" y="0.0" width="25" height="25"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55j-oq-JsN">
+                    <rect key="frame" x="100" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="55j-oq-JsN" secondAttribute="height" multiplier="1:1" id="h3F-Zc-6CS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rJW-BO-Apz" firstAttribute="height" secondItem="5bY-NM-BgY" secondAttribute="height" id="1ny-5H-1X8"/>
+                <constraint firstItem="55j-oq-JsN" firstAttribute="trailing" secondItem="BYg-hU-06d" secondAttribute="trailing" id="97B-cw-S1N"/>
+                <constraint firstItem="1bJ-ZK-pZI" firstAttribute="width" secondItem="1bJ-ZK-pZI" secondAttribute="height" multiplier="1:1" id="Cex-3A-f5J"/>
+                <constraint firstItem="ff5-D9-4G7" firstAttribute="leading" secondItem="BYg-hU-06d" secondAttribute="leading" id="MB3-7u-LC1"/>
+                <constraint firstItem="rJW-BO-Apz" firstAttribute="leading" secondItem="ff5-D9-4G7" secondAttribute="trailing" id="NGk-eU-4dw"/>
+                <constraint firstItem="1bJ-ZK-pZI" firstAttribute="leading" secondItem="5bY-NM-BgY" secondAttribute="trailing" id="P60-u5-An1"/>
+                <constraint firstItem="ff5-D9-4G7" firstAttribute="width" secondItem="ff5-D9-4G7" secondAttribute="height" multiplier="1:1" id="Rs2-xb-D59"/>
+                <constraint firstItem="5bY-NM-BgY" firstAttribute="leading" secondItem="rJW-BO-Apz" secondAttribute="trailing" id="TGj-gR-RTV"/>
+                <constraint firstItem="5bY-NM-BgY" firstAttribute="height" secondItem="XYc-LW-mQt" secondAttribute="height" id="WFS-4t-lAB"/>
+                <constraint firstItem="55j-oq-JsN" firstAttribute="leading" secondItem="1bJ-ZK-pZI" secondAttribute="trailing" id="dkd-ep-FR5"/>
+                <constraint firstItem="ff5-D9-4G7" firstAttribute="centerY" secondItem="XYc-LW-mQt" secondAttribute="centerY" id="fvY-Bw-doP"/>
+                <constraint firstItem="5bY-NM-BgY" firstAttribute="centerX" secondItem="XYc-LW-mQt" secondAttribute="centerX" id="ixw-my-6xQ"/>
+                <constraint firstItem="55j-oq-JsN" firstAttribute="centerY" secondItem="XYc-LW-mQt" secondAttribute="centerY" id="jJD-sh-Y1T"/>
+                <constraint firstItem="55j-oq-JsN" firstAttribute="width" secondItem="55j-oq-JsN" secondAttribute="height" multiplier="1:1" id="k4Y-FN-NHt"/>
+                <constraint firstItem="1bJ-ZK-pZI" firstAttribute="centerY" secondItem="XYc-LW-mQt" secondAttribute="centerY" id="l23-re-8zK"/>
+                <constraint firstItem="1bJ-ZK-pZI" firstAttribute="height" secondItem="5bY-NM-BgY" secondAttribute="height" id="n7g-wa-nk0"/>
+                <constraint firstItem="ff5-D9-4G7" firstAttribute="height" secondItem="5bY-NM-BgY" secondAttribute="height" id="qp9-gm-x9L"/>
+                <constraint firstItem="5bY-NM-BgY" firstAttribute="width" secondItem="5bY-NM-BgY" secondAttribute="height" multiplier="1:1" id="sJr-ab-TPP"/>
+                <constraint firstItem="5bY-NM-BgY" firstAttribute="centerY" secondItem="XYc-LW-mQt" secondAttribute="centerY" id="u7g-qu-ifZ"/>
+                <constraint firstItem="55j-oq-JsN" firstAttribute="height" secondItem="5bY-NM-BgY" secondAttribute="height" id="uGn-zY-hVo"/>
+                <constraint firstItem="rJW-BO-Apz" firstAttribute="centerY" secondItem="XYc-LW-mQt" secondAttribute="centerY" id="xR1-GN-29I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="BYg-hU-06d"/>
+            <point key="canvasLocation" x="628" y="394.45277361319341"/>
+        </view>
+    </objects>
+</document>
