@@ -8,16 +8,24 @@
 
 import Foundation
 
-class Movies {
+class MoviesManager {
     
-    static let shared = Movies()
+    static let moviesUpdateSuccessNotificationKey: Notification.Name = Notification.Name("moviesUpdateSuccess")
+    static let moviesUpdateErrorNotificationKey: Notification.Name = Notification.Name("moviesUpdateError")
+    
+    static let shared = MoviesManager()
     
     var movies: [Movie] = []
     var orderType: Int?
+    var isEmpty: Bool {
+        get {
+            return movies.count > 0 ? false : true
+        }
+    }
     
-    static func updateMovies() {
+    static func updateMovies(by orderType: Int) {
         // API요청 URL
-        guard let url: URL = URL(string: "http://connect-boxoffice.run.goorm.io/movies?order_type=\(self.shared.orderType ?? 0)") else {
+        guard let url: URL = URL(string: "http://connect-boxoffice.run.goorm.io/movies?order_type=\(orderType)") else {
             return
         }
         // 세션 생성
@@ -28,7 +36,7 @@ class Movies {
             if let error = error {
                 // Noti로 에러 알림 -> 재요청 or 취소 선택
                 print(error.localizedDescription)
-//                NotificationCenter.default.post(name: moviesUpdateErrorNotificationKey, object: nil)
+                NotificationCenter.default.post(name: moviesUpdateErrorNotificationKey, object: nil)
                 return
             }
             
@@ -44,11 +52,11 @@ class Movies {
                 self.shared.movies = apiResponse.movies
                 self.shared.orderType = apiResponse.orderType
                 // NotificationCenter에 업데이트 된것을 알림
-//                NotificationCenter.default.post(name: moviesUpdateNotificationKey, object: nil)
+                NotificationCenter.default.post(name: moviesUpdateSuccessNotificationKey, object: nil)
             } catch(let err) {
                 // Noti로 에러 알림 -> 재요청 or 취소 선택
                 print(err.localizedDescription)
-//                NotificationCenter.default.post(name: moviesUpdateErrorNotificationKey, object: nil)
+                NotificationCenter.default.post(name: moviesUpdateErrorNotificationKey, object: nil)
             }
         }
         dataTask.resume()

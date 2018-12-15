@@ -9,6 +9,10 @@
 import Foundation
 
 struct MovieInfo: Codable {
+    
+    static let movieInfoRequestSuccessNotificationKey: Notification.Name = Notification.Name("movieInfoRequestSuccess")
+    static let movieInfoRequestErrorNotificationKey: Notification.Name = Notification.Name("movieInfoRequestError")
+    
     // 영화 고유 ID
     let id: String
     // 영화제목
@@ -68,7 +72,7 @@ struct MovieInfo: Codable {
             // 에러 발생시 출력
             if let error = error {
                 print(error.localizedDescription)
-//                NotificationCenter.default.post(name: self.movieInfoRequestErrorNotificationKey, object: nil)
+                NotificationCenter.default.post(name: movieInfoRequestErrorNotificationKey, object: nil)
                 return
             }
             
@@ -80,10 +84,10 @@ struct MovieInfo: Codable {
             do {
                 // 결과값을 파싱
                 let apiResponse: MovieInfo = try JSONDecoder().decode(MovieInfo.self, from: data)
-//                NotificationCenter.default.post(name: movieInfoUpdateNotificationKey, object: nil, userInfo: ["Data":apiResponse])
+                NotificationCenter.default.post(name: movieInfoRequestSuccessNotificationKey, object: nil, userInfo: ["Data":apiResponse])
             } catch (let err) {
                 print(err.localizedDescription)
-//                NotificationCenter.default.post(name: self.movieInfoRequestErrorNotificationKey, object: nil)
+                NotificationCenter.default.post(name: self.movieInfoRequestErrorNotificationKey, object: nil)
             }
         }
         dataTask.resume()

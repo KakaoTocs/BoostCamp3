@@ -10,6 +10,13 @@ import UIKit
 
 class CommentTableViewCell: UITableViewCell {
 
+    static let identifier = "MovieCommentCell"
+    
+    @IBOutlet weak var writerLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
+    @IBOutlet weak var contentsLabel: UILabel!
+    @IBOutlet weak var ratingLabel: GradeView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

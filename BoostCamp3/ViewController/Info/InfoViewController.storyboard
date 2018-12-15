@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oMO-O4-Ghu">
-                                <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMO-O4-Ghu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-1o-mfh">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
@@ -125,7 +125,7 @@
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5l-Nw-uGZ" customClass="GradeView" customModule="BoostCamp3" customModuleProvider="target">
                                                                 <rect key="frame" x="126.5" y="44.5" width="102.5" height="20.5"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" secondItem="N5l-Nw-uGZ" secondAttribute="width" multiplier="1:5" id="pOB-b7-mvM"/>
                                                                 </constraints>
@@ -315,8 +315,19 @@ Director/ActorView</string>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oMO-O4-Ghu" firstAttribute="trailing" secondItem="xpH-cx-5gI" secondAttribute="trailing" id="TqI-Sx-3FV"/>
+                            <constraint firstItem="xpH-cx-5gI" firstAttribute="bottom" secondItem="oMO-O4-Ghu" secondAttribute="bottom" id="aSc-5g-6IM"/>
+                            <constraint firstItem="oMO-O4-Ghu" firstAttribute="top" secondItem="xpH-cx-5gI" secondAttribute="top" id="wRQ-6t-Q5Z"/>
+                            <constraint firstItem="oMO-O4-Ghu" firstAttribute="leading" secondItem="xpH-cx-5gI" secondAttribute="leading" id="wqD-hh-R1z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xpH-cx-5gI"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="kNO-Wd-IdB" id="rQm-Zf-iGC"/>
+                        <outlet property="thumbImageView" destination="JXb-Ao-rNA" id="e24-Uv-yTW"/>
+                        <outlet property="titleLabel" destination="CWI-EA-wwO" id="3zE-US-xyT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifB-9e-gps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
