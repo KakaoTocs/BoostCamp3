@@ -17,17 +17,18 @@
 		65ED899921BB9C41002B4B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED899721BB9C41002B4B60 /* Main.storyboard */; };
 		65ED899B21BB9C42002B4B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED899A21BB9C42002B4B60 /* Assets.xcassets */; };
 		65ED899E21BB9C42002B4B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED899C21BB9C42002B4B60 /* LaunchScreen.storyboard */; };
-		65ED89AB21BB9F6C002B4B60 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89A921BB9F6C002B4B60 /* InfoViewController.swift */; };
+		65ED89AB21BB9F6C002B4B60 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89A921BB9F6C002B4B60 /* MovieInfoViewController.swift */; };
 		65ED89AF21BBAA27002B4B60 /* GradeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ED89AE21BBAA27002B4B60 /* GradeView.xib */; };
 		65ED89B121BCDC88002B4B60 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89B021BCDC88002B4B60 /* Movie.swift */; };
 		65ED89B321BCDCFE002B4B60 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89B221BCDCFE002B4B60 /* MovieInfo.swift */; };
-		65ED89B521BCDD8A002B4B60 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89B421BCDD8A002B4B60 /* Comment.swift */; };
+		65ED89B521BCDD8A002B4B60 /* MovieComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89B421BCDD8A002B4B60 /* MovieComment.swift */; };
 		65ED89B721BCE0EA002B4B60 /* GradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89B621BCE0EA002B4B60 /* GradeView.swift */; };
-		65ED89BA21BCF36A002B4B60 /* InfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED89B921BCF36A002B4B60 /* InfoViewController.storyboard */; };
-		65ED89BE21BCF7C5002B4B60 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89BC21BCF7C5002B4B60 /* CommentTableViewCell.swift */; };
-		65ED89BF21BCF7C5002B4B60 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ED89BD21BCF7C5002B4B60 /* CommentTableViewCell.xib */; };
+		65ED89BA21BCF36A002B4B60 /* MovieInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED89B921BCF36A002B4B60 /* MovieInfoViewController.storyboard */; };
+		65ED89BE21BCF7C5002B4B60 /* MovieCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89BC21BCF7C5002B4B60 /* MovieCommentTableViewCell.swift */; };
+		65ED89BF21BCF7C5002B4B60 /* MovieCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ED89BD21BCF7C5002B4B60 /* MovieCommentTableViewCell.xib */; };
 		65ED89C121BCFEBE002B4B60 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89C021BCFEBE002B4B60 /* MoviesResponse.swift */; };
 		65ED89C321BCFF80002B4B60 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED89C221BCFF80002B4B60 /* MoviesManager.swift */; };
+		65F8554621C6B84600E9083F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8554521C6B84600E9083F /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +44,18 @@
 		65ED899A21BB9C42002B4B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65ED899D21BB9C42002B4B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65ED899F21BB9C42002B4B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65ED89A921BB9F6C002B4B60 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		65ED89A921BB9F6C002B4B60 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
 		65ED89AE21BBAA27002B4B60 /* GradeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeView.xib; sourceTree = "<group>"; };
 		65ED89B021BCDC88002B4B60 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		65ED89B221BCDCFE002B4B60 /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
-		65ED89B421BCDD8A002B4B60 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		65ED89B421BCDD8A002B4B60 /* MovieComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieComment.swift; sourceTree = "<group>"; };
 		65ED89B621BCE0EA002B4B60 /* GradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeView.swift; sourceTree = "<group>"; };
-		65ED89B921BCF36A002B4B60 /* InfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoViewController.storyboard; sourceTree = "<group>"; };
-		65ED89BC21BCF7C5002B4B60 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		65ED89BD21BCF7C5002B4B60 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		65ED89B921BCF36A002B4B60 /* MovieInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieInfoViewController.storyboard; sourceTree = "<group>"; };
+		65ED89BC21BCF7C5002B4B60 /* MovieCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCommentTableViewCell.swift; sourceTree = "<group>"; };
+		65ED89BD21BCF7C5002B4B60 /* MovieCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCommentTableViewCell.xib; sourceTree = "<group>"; };
 		65ED89C021BCFEBE002B4B60 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
 		65ED89C221BCFF80002B4B60 /* MoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
+		65F8554521C6B84600E9083F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				65ED899C21BB9C42002B4B60 /* LaunchScreen.storyboard */,
 				65ED899721BB9C41002B4B60 /* Main.storyboard */,
 				65ED899F21BB9C42002B4B60 /* Info.plist */,
+				65F8554521C6B84600E9083F /* Utility.swift */,
 			);
 			path = BoostCamp3;
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 		65ED89A521BB9CAF002B4B60 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				65ED89A821BB9F51002B4B60 /* Info */,
+				65ED89A821BB9F51002B4B60 /* MovieInfo */,
 				65ED89A621BB9CB7002B4B60 /* MovieTable */,
 				65D9282321BEAA4300369BD5 /* MovieCollection */,
 			);
@@ -135,19 +138,19 @@
 				65ED89C021BCFEBE002B4B60 /* MoviesResponse.swift */,
 				65ED89C221BCFF80002B4B60 /* MoviesManager.swift */,
 				65ED89B221BCDCFE002B4B60 /* MovieInfo.swift */,
-				65ED89B421BCDD8A002B4B60 /* Comment.swift */,
+				65ED89B421BCDD8A002B4B60 /* MovieComment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		65ED89A821BB9F51002B4B60 /* Info */ = {
+		65ED89A821BB9F51002B4B60 /* MovieInfo */ = {
 			isa = PBXGroup;
 			children = (
 				65ED89BB21BCF7AA002B4B60 /* CommentCell */,
-				65ED89A921BB9F6C002B4B60 /* InfoViewController.swift */,
-				65ED89B921BCF36A002B4B60 /* InfoViewController.storyboard */,
+				65ED89A921BB9F6C002B4B60 /* MovieInfoViewController.swift */,
+				65ED89B921BCF36A002B4B60 /* MovieInfoViewController.storyboard */,
 			);
-			path = Info;
+			path = MovieInfo;
 			sourceTree = "<group>";
 		};
 		65ED89AD21BBA9F6002B4B60 /* CustomUI */ = {
@@ -170,8 +173,8 @@
 		65ED89BB21BCF7AA002B4B60 /* CommentCell */ = {
 			isa = PBXGroup;
 			children = (
-				65ED89BC21BCF7C5002B4B60 /* CommentTableViewCell.swift */,
-				65ED89BD21BCF7C5002B4B60 /* CommentTableViewCell.xib */,
+				65ED89BC21BCF7C5002B4B60 /* MovieCommentTableViewCell.swift */,
+				65ED89BD21BCF7C5002B4B60 /* MovieCommentTableViewCell.xib */,
 			);
 			path = CommentCell;
 			sourceTree = "<group>";
@@ -235,10 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ED89AF21BBAA27002B4B60 /* GradeView.xib in Resources */,
-				65ED89BF21BCF7C5002B4B60 /* CommentTableViewCell.xib in Resources */,
+				65ED89BF21BCF7C5002B4B60 /* MovieCommentTableViewCell.xib in Resources */,
 				65ED899E21BB9C42002B4B60 /* LaunchScreen.storyboard in Resources */,
 				65ED899B21BB9C42002B4B60 /* Assets.xcassets in Resources */,
-				65ED89BA21BCF36A002B4B60 /* InfoViewController.storyboard in Resources */,
+				65ED89BA21BCF36A002B4B60 /* MovieInfoViewController.storyboard in Resources */,
 				65D9282721BEAAB300369BD5 /* MovieCollection.storyboard in Resources */,
 				65D9282521BEAA8500369BD5 /* MovieTable.storyboard in Resources */,
 				65ED899921BB9C41002B4B60 /* Main.storyboard in Resources */,
@@ -252,16 +255,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F8554621C6B84600E9083F /* Utility.swift in Sources */,
 				65ED89C321BCFF80002B4B60 /* MoviesManager.swift in Sources */,
 				65EB9CAC21C0007200874AD3 /* MovieCollectionViewCell.swift in Sources */,
 				65D9282221BEAA2E00369BD5 /* MovieCollectionViewController.swift in Sources */,
 				65D9282921BEAF8C00369BD5 /* MovieTableViewCell.swift in Sources */,
 				65ED899621BB9C41002B4B60 /* MovieTableViewController.swift in Sources */,
-				65ED89B521BCDD8A002B4B60 /* Comment.swift in Sources */,
+				65ED89B521BCDD8A002B4B60 /* MovieComment.swift in Sources */,
 				65ED89C121BCFEBE002B4B60 /* MoviesResponse.swift in Sources */,
 				65ED89B321BCDCFE002B4B60 /* MovieInfo.swift in Sources */,
-				65ED89BE21BCF7C5002B4B60 /* CommentTableViewCell.swift in Sources */,
-				65ED89AB21BB9F6C002B4B60 /* InfoViewController.swift in Sources */,
+				65ED89BE21BCF7C5002B4B60 /* MovieCommentTableViewCell.swift in Sources */,
+				65ED89AB21BB9F6C002B4B60 /* MovieInfoViewController.swift in Sources */,
 				65ED89B121BCDC88002B4B60 /* Movie.swift in Sources */,
 				65ED899421BB9C41002B4B60 /* AppDelegate.swift in Sources */,
 				65ED89B721BCE0EA002B4B60 /* GradeView.swift in Sources */,

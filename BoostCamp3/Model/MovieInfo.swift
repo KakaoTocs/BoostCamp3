@@ -42,6 +42,16 @@ struct MovieInfo: Codable {
     // 사용자 평점
     let userRating: Double
     
+    // 시청가능 연령이미지의 이름을 반환해주는 변수
+    var gradeString: String {
+        switch self.grade {
+        case 0:
+            return "ic_allages"
+        default:
+            return "ic_\(self.grade)"
+        }
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id
         case title
@@ -59,9 +69,9 @@ struct MovieInfo: Codable {
         case userRating = "user_rating"
     }
     
-    static func requestMovieInfo(by id: String) {
+    static func requestMovieInfo(by movieId: String) {
         // API요청 URL
-        guard let url: URL = URL(string: "http://connect-boxoffice.run.goorm.io/movie?id=" + id) else {
+        guard let url: URL = URL(string: "http://connect-boxoffice.run.goorm.io/movie?id=" + movieId) else {
             return
         }
         // 세션 생성

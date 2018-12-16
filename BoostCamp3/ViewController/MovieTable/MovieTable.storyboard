@@ -87,14 +87,25 @@
                                             <outlet property="infoLabel" destination="e3k-rg-eEb" id="w7F-H3-CJD"/>
                                             <outlet property="thumbImageView" destination="vgI-V8-Xxa" id="Ldv-Nc-lWf"/>
                                             <outlet property="titleLabel" destination="VTU-mf-cVj" id="gSh-Ou-dsx"/>
-                                            <segue destination="Ggv-ja-qeP" kind="show" id="sLt-Xt-JUx"/>
+                                            <segue destination="Ggv-ja-qeP" kind="show" identifier="MovieInfoFromTable" id="sLt-Xt-JUx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-eA-54x">
+                                <rect key="frame" x="125" y="249" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8Ag-Zk-5DC"/>
+                                    <constraint firstAttribute="height" constant="70" id="a8w-uM-RVv"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="dYX-eA-54x" firstAttribute="centerX" secondItem="mpG-CD-GAj" secondAttribute="centerX" id="0TH-t2-dK2"/>
+                            <constraint firstItem="dYX-eA-54x" firstAttribute="centerY" secondItem="mpG-CD-GAj" secondAttribute="centerY" id="2Sd-Ne-uDY"/>
                             <constraint firstItem="gLC-PH-sLb" firstAttribute="bottom" secondItem="QDs-YZ-vNh" secondAttribute="bottom" id="8DS-Xh-M0c"/>
                             <constraint firstItem="QDs-YZ-vNh" firstAttribute="top" secondItem="gLC-PH-sLb" secondAttribute="top" id="AD8-Eo-POH"/>
                             <constraint firstItem="gLC-PH-sLb" firstAttribute="trailing" secondItem="QDs-YZ-vNh" secondAttribute="trailing" id="FdI-Uy-D9e"/>
@@ -106,6 +117,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="TCN-VN-oul"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="dYX-eA-54x" id="XUN-hS-h3Y"/>
                         <outlet property="tableView" destination="QDs-YZ-vNh" id="Nhb-pL-0zZ"/>
                     </connections>
                 </viewController>
@@ -113,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="1848.8" y="-587.85607196401804"/>
         </scene>
-        <!--InfoVC-->
+        <!--MovieInfoVC-->
         <scene sceneID="Uz3-57-9Hv">
             <objects>
-                <viewControllerPlaceholder storyboardName="InfoViewController" referencedIdentifier="InfoVC" id="Ggv-ja-qeP" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MovieInfoViewController" referencedIdentifier="MovieInfoVC" id="Ggv-ja-qeP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnb-rJ-lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2656" y="-588"/>

@@ -99,15 +99,26 @@
                                             <outlet property="infoLabel" destination="aS3-RJ-DFA" id="f6n-hG-OBp"/>
                                             <outlet property="thumbImageView" destination="lGz-iD-daJ" id="PG6-uF-tt2"/>
                                             <outlet property="titleLabel" destination="qQK-9m-Mf3" id="Nhr-SL-Gff"/>
-                                            <segue destination="hyq-kh-C7W" kind="show" id="iWr-tG-H76"/>
+                                            <segue destination="hyq-kh-C7W" kind="show" identifier="MovieInfoFromCollection" id="iWr-tG-H76"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-Z7-KxL">
+                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1z3-9x-Rwp"/>
+                                    <constraint firstAttribute="height" constant="70" id="nhs-cd-plG"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="srT-S5-fNa" firstAttribute="trailing" secondItem="bMZ-G3-CCW" secondAttribute="trailing" id="4VG-uD-Bce"/>
+                            <constraint firstItem="Fls-Z7-KxL" firstAttribute="centerX" secondItem="CpH-BM-F3V" secondAttribute="centerX" id="Fkx-Sj-aW8"/>
+                            <constraint firstItem="Fls-Z7-KxL" firstAttribute="centerY" secondItem="CpH-BM-F3V" secondAttribute="centerY" id="K0W-1t-Hkn"/>
                             <constraint firstItem="bMZ-G3-CCW" firstAttribute="leading" secondItem="srT-S5-fNa" secondAttribute="leading" id="WaC-l1-BG4"/>
                             <constraint firstItem="srT-S5-fNa" firstAttribute="bottom" secondItem="bMZ-G3-CCW" secondAttribute="bottom" id="kaM-yQ-hGe"/>
                             <constraint firstItem="bMZ-G3-CCW" firstAttribute="top" secondItem="srT-S5-fNa" secondAttribute="top" id="uhH-WR-F7q"/>
@@ -118,6 +129,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="scE-V4-Lnm"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="Fls-Z7-KxL" id="1PN-59-8LX"/>
                         <outlet property="collectionView" destination="bMZ-G3-CCW" id="CbV-1D-dFs"/>
                     </connections>
                 </viewController>
@@ -125,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="2693.5999999999999" y="-588.75562218890559"/>
         </scene>
-        <!--InfoVC-->
+        <!--MovieInfoVC-->
         <scene sceneID="6BX-2r-qTS">
             <objects>
-                <viewControllerPlaceholder storyboardName="InfoViewController" referencedIdentifier="InfoVC" id="hyq-kh-C7W" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MovieInfoViewController" referencedIdentifier="MovieInfoVC" id="hyq-kh-C7W" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4i-uZ-3ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3390" y="-589"/>

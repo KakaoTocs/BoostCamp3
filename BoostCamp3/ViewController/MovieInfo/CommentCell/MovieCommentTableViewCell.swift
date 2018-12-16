@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommentTableViewCell: UITableViewCell {
+class MovieCommentTableViewCell: UITableViewCell {
 
     static let identifier = "MovieCommentCell"
     
@@ -28,4 +28,21 @@ class CommentTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func refresh(with comment: MovieComment) {
+        self.writerLabel.text = comment.writer
+        self.timestampLabel.text = unixtimeToDate(time: comment.timestamp)
+        self.contentsLabel.text = comment.contents
+        self.ratingLabel.setRate(rate: comment.rating)
+    }
+    
+    // MARK: - Custom Method
+    private func unixtimeToDate(time: Double) -> String {
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let date = Date(timeIntervalSince1970: time)
+        let result = dateFormatter.string(from: date)
+        
+        return result
+    }
 }
